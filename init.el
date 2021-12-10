@@ -26,9 +26,11 @@
       )
   )
 
+
+;; Temas 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/dijkstra-theme/")
 (load-theme 'dijkstra t)
-;;(load-theme 'dijkstra-dark-blue t) ;; I like this theme
+;; (load-theme 'dijkstra-dark-blue t) ;; I like this theme
 
 (if  (eq (car custom-enabled-themes) 'dijkstra)
     (progn
