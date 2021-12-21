@@ -6,7 +6,6 @@
 (setq custom-file "~/.emacs.d/plugins/packages.el")
 (load custom-file)
 
-
 ;;Ajustamos nuestras configuraciones dependiendo de nuestro sistema operativo.
 (if (eq system-type 'windows-nt)
     (progn
@@ -26,23 +25,16 @@
       )
   )
 
-
-;; Temas 
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/dijkstra-theme/")
-(load-theme 'dijkstra t)
-;; (load-theme 'dijkstra-dark-blue t) ;; I like this theme
-
-(if  (eq (car custom-enabled-themes) 'dijkstra)
+;; Theme
+;; Cargamos nuestra paleta de colores para nuestro tema en particular.
+;; Solo cuando es ejecutado con windos-system (GUI), valor x or nil.
+(if window-system
     (progn
-      (custom-set-faces
-       ;;`(default ((t (:foreground "#F6F3E8" :weight semibold)))) ;; Mas blanco
-       )
-      ;;(message "hola mundo")
-      ;;(add-hook 'prog-mode-hook 'linum-mode)
+      (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/dijkstra-theme/")
+      (load-theme 'dijkstra t)
       (global-set-key [remap goto-line] 'goto-line-with-feedback)
-      ;;(add-hook 'prog-mode-hook 'display-line-numbers-mode)
-      )
-  )
+    )    
+)
 
 (provide 'init)
 

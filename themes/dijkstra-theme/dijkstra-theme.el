@@ -46,7 +46,7 @@
    'dijkstra
 
    ;; ----------------- Frame stuff --------------------
-   `(default ((t (:background ,dijkstra-background :foreground ,dijkstra-foreground :weight semibold))))
+   `(default ((t (:background ,dijkstra-background :foreground ,dijkstra-foreground :weight normal))))
 
    `(cursor  ((t (:background ,dijkstra-off-white))))
    ;;Marcado de la linea actual si es que esta activado.

@@ -5,7 +5,7 @@
 ;; Create a variable to indicate where emacs's configuration is installed
 (setq EMACS_DIR "~/.emacs.d/")
 ;; Window frame title
-(setq frame-title-format '("Emacs" emacs-version "     %b   %*"))
+(setq frame-title-format '("     %b   %*"))
 ;; (setq frame-title-format '("Emacs " emacs-version))
 
 ;; Scroll one line at a time

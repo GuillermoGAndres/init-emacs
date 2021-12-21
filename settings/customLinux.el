@@ -1,7 +1,9 @@
 ;; Ajuste de la letra
 ;;(set-face-attribute 'default nil :height 133) ;; Default Source Code Pro
 ;;(set-face-attribute 'default nil :font "DejaVu Sans Mono" :height 135)
-(set-face-attribute 'default nil :font "Source Code Pro" :height 140)
+;;(set-face-attribute 'default nil :font "Source Code Pro" :height 140)
+;;(set-face-attribute 'default nil :font "Source Code Pro" :height 160)
+(set-face-attribute 'default nil :font "DejaVu Sans Mono" :height 160)
 
 ;; Adjustar ventana para monitor 24"
 (when window-system (set-frame-size (selected-frame) 101 28)) ;; Tamanio de la ventana
