@@ -32,7 +32,11 @@
     (progn
       (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/dijkstra-theme/")
       (load-theme 'dijkstra t)
-      (global-set-key [remap goto-line] 'goto-line-with-feedback)
+
+      (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/Church-theme")
+      ;;(load-theme 'church t)
+      
+      ;; (global-set-key [remap goto-line] 'goto-line-with-feedback)
     )    
 )
 

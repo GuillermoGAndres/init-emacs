@@ -10,22 +10,16 @@
 (deftheme dijkstra
   "A dark blue color theme :)")
 
-;; Only if you use linum-mode descomment, otherwise commet
-;; https://www.reddit.com/r/emacs/comments/6vwwt9/native_line_numbering_setting_width_to_current/
-;; https://www.reddit.com/r/emacs/comments/aa9rg7/how_to_make_line_numbers_in/
-;; https://emacs.stackexchange.com/questions/5289/any-way-to-get-a-working-separator-line-between-fringe-line-numbers-and-the-buff
-;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Window-Sizes.html
+;; ;ver colores M-x list-faces-display
 (custom-theme-set-variables
  'dijkstra
  '(linum-format "%4d") ;; insert a space between number
- '(fringe-mode 19)) ;; ;; make both fringes 19 pixels wide
-
-;; ----------------------------------------
+ '(fringe-mode 19)) ;; make both fringes 19 pixels wide
 
 (let ((dijkstra-background      "#111928") ;; azul 7
       ;;(dijkstra-background      "#0C1A29")
       ;;(dijkstra-background      "#0d101e") ;; azul 1
-      (dijkstra-foreground      "#d6d6d6")
+      (dijkstra-foreground      "#ededed")
       (dijkstra-mid-gray        "#666666")
       (dijkstra-darker-gray     "#14191f")
       (dijkstra-white           "#FFFFFF")
@@ -46,7 +40,7 @@
    'dijkstra
 
    ;; ----------------- Frame stuff --------------------
-   `(default ((t (:background ,dijkstra-background :foreground ,dijkstra-foreground :weight normal))))
+   `(default ((t (:background ,dijkstra-background :foreground ,dijkstra-foreground))))
 
    `(cursor  ((t (:background ,dijkstra-off-white))))
    ;;Marcado de la linea actual si es que esta activado.
@@ -72,44 +66,33 @@
    `(fringe ((t (:background ,dijkstra-background))))
 
    ;; ---------------- Code Highlighting ---------------
-   ;; aquamarina : #7fffd4
    ;; Builtin
-   ;;'(font-lock-builtin-face ((t (:foreground "#A4D1F2")))) ;;Azul claro #A4D1F2
-   '(font-lock-builtin-face ((t (:foreground "#add8e6")))) ;;lightblue:  #add8e6
+   '(font-lock-builtin-face ((t (:foreground "#add8e6"))))
 
    ;; Comments
-   '(font-lock-comment-face ((t (:foreground "#86B187" :slant italic)))) ; Comentarios de en linea
-   '(font-lock-doc-face ((t (:foreground "#86B187")))) ;Docsting gris chido #9FB3C2 or verde chido #86B187 o verde con un tono poco nitido #8AB8A2.
+   '(font-lock-comment-face ((t (:foreground "#657e65" :slant italic))))
+   '(font-lock-doc-face ((t (:foreground "#657e65")))) 
 
    ;; Function names
-   ;;'(font-lock-function-name-face ((t (:foreground "#F28B86")))) ; color salmon para las funcines
-   '(font-lock-function-name-face ((t (:foreground "#edb0a0")))) ;; naranja
+   '(font-lock-function-name-face ((t (:foreground "#e0e4d1"))))
 
    ;; Keywords
-   '(font-lock-keyword-face ((t (:foreground "#377db0" :weight bold)))) ;Color azul marino
-   ;;'(font-lock-keyword-face ((t (:foreground "#8AC6F2" :weight bold)))) ;Color azul muy chido.
+   '(font-lock-keyword-face ((t (:foreground "#689bde"))))
 
    ;; Strings
-   '(font-lock-string-face ((t (:foreground "#edb0a0")))) ;Cadenas naranja claro #edb0a0 or #D1907F
-   ;;'(font-lock-string-face ((t (:foreground "#D1907F")))) ;Cadenas naranjas
+   '(font-lock-string-face ((t (:foreground "#e9bb9b")))) ;Cadenas naranja claro #edb0a0 or #D1907F
 
    ;; Variables
    '(font-lock-type-face ((t (:foreground "#F0DFAF"))))  ; amarillo
 
    ;; Constantes
-   ;'(font-lock-constant-face ((t (:foreground "#ed36c0")))) ; Rosa mexicano
-   ;'(font-lock-constant-face ((t (:foreground "pink")))) ; Rosa mexicano
-   '(font-lock-constant-face ((t (:foreground "#ffc580")))) ; orange
+   '(font-lock-constant-face ((t (:foreground "#9da599")))) ; orange
 
 
-   ;;'(font-lock-variable-name-face ((t (:foreground "#9FB3C2")))) ;Color verde chido #8AB8A2 or gris #9FB3C2, para los nombre de los tipos.
-   ;;'(font-lock-variable-name-face ((t (:foreground "#FFC8AE")))) ;#FFC8AE naranjas
    '(font-lock-variable-name-face ((t (:foreground "#d6d6d6")))) ; color de la letra
 
    ;;Warning
    `(font-lock-warning-face ((t (:foreground "#F28B86" :bold t))))
-
-   ;; Amarillo #dcb62c, rojo #f37d6c , verde #87e5c6, amariillo contastantes #F0DFAF, otro amarillo
    
    ;; ---------------------------Company ---------------------------------------------------------
    '(company-preview ((t (:background "#111928" :foreground "#848484"))))

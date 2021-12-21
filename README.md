@@ -1,10 +1,11 @@
 # Instalación
-Ir al directorio de configuracion de emacs y clonar el repotorio ahi mismo:
+Ir al directorio de configuracion de emacs y clonar el repositorio ahi mismo:
 ```
 cd ~/.emacs.d/
 git clone https://github.com/GuillermoGAndres/init-emacs.git .
 ```
 Una vez descargado, sólo sera cuestion de abrir tu emacs y esperar que cargen los paquetes.
+(Abrir y cerrar emacs hasta que se hayan instalado cada paquete)
 
 ## Ejecutar emacs
 Correr emacs via GUI en segundo plano 

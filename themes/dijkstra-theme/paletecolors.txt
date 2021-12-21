@@ -28,5 +28,18 @@ amarillo mostaza - #ffe173
 
 
 interactive background - #1e2338
+---- ganadores
+#689bde keywords
+#e0e4d1 or #f7f8b2 funciones
+#9da599 constantes
+#657e65 comentarios
 
 
+
+
+
+----------------------------
+#375f7c - azul marino
+#81b0d2
+#87a781 verde
+#667765
